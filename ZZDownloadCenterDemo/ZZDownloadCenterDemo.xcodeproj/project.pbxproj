@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41CE8BFDCA2D711D6C5D9205 /* libPods-ZZDownloadCenterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5897C057B9E6D392F31486 /* libPods-ZZDownloadCenterDemo.a */; };
+		AE32DA161F0D276300BB8489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32DA151F0D276300BB8489 /* main.m */; };
+		AE32DA191F0D276300BB8489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32DA181F0D276300BB8489 /* AppDelegate.m */; };
+		AE32DA1C1F0D276300BB8489 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32DA1B1F0D276300BB8489 /* ViewController.m */; };
+		AE32DA1F1F0D276300BB8489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE32DA1D1F0D276300BB8489 /* Main.storyboard */; };
+		AE32DA211F0D276300BB8489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE32DA201F0D276300BB8489 /* Assets.xcassets */; };
+		AE32DA241F0D276300BB8489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE32DA221F0D276300BB8489 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E821280E739C6EACC46E19A /* Pods-ZZDownloadCenterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDownloadCenterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZDownloadCenterDemo/Pods-ZZDownloadCenterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AE32DA111F0D276300BB8489 /* ZZDownloadCenterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZDownloadCenterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE32DA151F0D276300BB8489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE32DA171F0D276300BB8489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE32DA181F0D276300BB8489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE32DA1A1F0D276300BB8489 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE32DA1B1F0D276300BB8489 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE32DA1E1F0D276300BB8489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE32DA201F0D276300BB8489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE32DA231F0D276300BB8489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE32DA251F0D276300BB8489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D884680F4E8BF495F70B16E4 /* Pods-ZZDownloadCenterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDownloadCenterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZDownloadCenterDemo/Pods-ZZDownloadCenterDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DA5897C057B9E6D392F31486 /* libPods-ZZDownloadCenterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZDownloadCenterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE32DA0E1F0D276300BB8489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41CE8BFDCA2D711D6C5D9205 /* libPods-ZZDownloadCenterDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5233B0DAA799ADD077A79815 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E821280E739C6EACC46E19A /* Pods-ZZDownloadCenterDemo.debug.xcconfig */,
+				D884680F4E8BF495F70B16E4 /* Pods-ZZDownloadCenterDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE32DA081F0D276300BB8489 = {
+			isa = PBXGroup;
+			children = (
+				AE32DA131F0D276300BB8489 /* ZZDownloadCenterDemo */,
+				AE32DA121F0D276300BB8489 /* Products */,
+				5233B0DAA799ADD077A79815 /* Pods */,
+				B5300F73CFEF7E0E3F837BFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE32DA121F0D276300BB8489 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE32DA111F0D276300BB8489 /* ZZDownloadCenterDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE32DA131F0D276300BB8489 /* ZZDownloadCenterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AE32DA171F0D276300BB8489 /* AppDelegate.h */,
+				AE32DA181F0D276300BB8489 /* AppDelegate.m */,
+				AE32DA1A1F0D276300BB8489 /* ViewController.h */,
+				AE32DA1B1F0D276300BB8489 /* ViewController.m */,
+				AE32DA1D1F0D276300BB8489 /* Main.storyboard */,
+				AE32DA201F0D276300BB8489 /* Assets.xcassets */,
+				AE32DA221F0D276300BB8489 /* LaunchScreen.storyboard */,
+				AE32DA251F0D276300BB8489 /* Info.plist */,
+				AE32DA141F0D276300BB8489 /* Supporting Files */,
+			);
+			path = ZZDownloadCenterDemo;
+			sourceTree = "<group>";
+		};
+		AE32DA141F0D276300BB8489 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE32DA151F0D276300BB8489 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5300F73CFEF7E0E3F837BFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA5897C057B9E6D392F31486 /* libPods-ZZDownloadCenterDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE32DA101F0D276300BB8489 /* ZZDownloadCenterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE32DA281F0D276300BB8489 /* Build configuration list for PBXNativeTarget "ZZDownloadCenterDemo" */;
+			buildPhases = (
+				A1C30E29B205F6E33B7DFA56 /* [CP] Check Pods Manifest.lock */,
+				AE32DA0D1F0D276300BB8489 /* Sources */,
+				AE32DA0E1F0D276300BB8489 /* Frameworks */,
+				AE32DA0F1F0D276300BB8489 /* Resources */,
+				60072F5424E091CDFE161944 /* [CP] Embed Pods Frameworks */,
+				565D699D89440E1A3380D184 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZZDownloadCenterDemo;
+			productName = ZZDownloadCenterDemo;
+			productReference = AE32DA111F0D276300BB8489 /* ZZDownloadCenterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE32DA091F0D276300BB8489 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zhuo;
+				TargetAttributes = {
+					AE32DA101F0D276300BB8489 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F847W98V97;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AE32DA0C1F0D276300BB8489 /* Build configuration list for PBXProject "ZZDownloadCenterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE32DA081F0D276300BB8489;
+			productRefGroup = AE32DA121F0D276300BB8489 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE32DA101F0D276300BB8489 /* ZZDownloadCenterDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE32DA0F1F0D276300BB8489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE32DA241F0D276300BB8489 /* LaunchScreen.storyboard in Resources */,
+				AE32DA211F0D276300BB8489 /* Assets.xcassets in Resources */,
+				AE32DA1F1F0D276300BB8489 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		565D699D89440E1A3380D184 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZZDownloadCenterDemo/Pods-ZZDownloadCenterDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60072F5424E091CDFE161944 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZZDownloadCenterDemo/Pods-ZZDownloadCenterDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1C30E29B205F6E33B7DFA56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE32DA0D1F0D276300BB8489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE32DA1C1F0D276300BB8489 /* ViewController.m in Sources */,
+				AE32DA191F0D276300BB8489 /* AppDelegate.m in Sources */,
+				AE32DA161F0D276300BB8489 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE32DA1D1F0D276300BB8489 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE32DA1E1F0D276300BB8489 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE32DA221F0D276300BB8489 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE32DA231F0D276300BB8489 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE32DA261F0D276300BB8489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE32DA271F0D276300BB8489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE32DA291F0D276300BB8489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E821280E739C6EACC46E19A /* Pods-ZZDownloadCenterDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F847W98V97;
+				INFOPLIST_FILE = ZZDownloadCenterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.365ime.zhuo.ZZDownloadCenterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE32DA2A1F0D276300BB8489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D884680F4E8BF495F70B16E4 /* Pods-ZZDownloadCenterDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F847W98V97;
+				INFOPLIST_FILE = ZZDownloadCenterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.365ime.zhuo.ZZDownloadCenterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE32DA0C1F0D276300BB8489 /* Build configuration list for PBXProject "ZZDownloadCenterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE32DA261F0D276300BB8489 /* Debug */,
+				AE32DA271F0D276300BB8489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE32DA281F0D276300BB8489 /* Build configuration list for PBXNativeTarget "ZZDownloadCenterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE32DA291F0D276300BB8489 /* Debug */,
+				AE32DA2A1F0D276300BB8489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE32DA091F0D276300BB8489 /* Project object */;
+}
