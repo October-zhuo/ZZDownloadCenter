@@ -10,7 +10,7 @@
 @class ZZDownloadConfiguration;
 
 typedef void(^progressBlock)(float progress);
-typedef void(^completionBlock)(BOOL success, NSString *localUrlString, NSError *error);
+typedef void(^completionBlock)(NSURL *localURL, NSError *error);
 
 @interface ZZDownloadCenter : NSObject
 
@@ -18,6 +18,6 @@ typedef void(^completionBlock)(BOOL success, NSString *localUrlString, NSError *
 
 - (id)downloadWithURL:(NSURL *)url
                    configuration:(ZZDownloadConfiguration *)configuration
-                              progres:(progressBlock)progress
-                       completion:(completionBlock)completion;
+                         progres:(progressBlock)progress
+                      completion:(completionBlock)completion;
 @end

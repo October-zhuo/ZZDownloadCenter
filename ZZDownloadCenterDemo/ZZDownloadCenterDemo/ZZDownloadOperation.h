@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZZDownloadOperation : NSObject
+@class ZZDownloadConfiguration;
 
+extern NSString * _Nonnull const filePathName;
+
+@interface ZZDownloadOperation : NSOperation
+@property (nonatomic, copy)NSURL * _Nullable filePath;
+@property (nonatomic, copy)void(^ _Nullable configStream)(NSOutputStream * _Nonnull stream, NSUInteger taskID, NSURL * _Nonnull originURL);
+
+- (instancetype _Nullable )initWithRequest:(nonnull NSURLRequest *)request
+                        session:(NSURLSession * _Nonnull)session
+                     targetPath:(nonnull NSURL *)filePath;
 @end

@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface ZZDownloadFileManager : NSObject
++ (instancetype)sharedManager;
+- (NSURL *)tempLocalURLWithURL:(NSURL *)url;
+- (BOOL)exitUnFinishedTaskForURL:(NSURL *)url;
+- (long long) lengthOfFile:(NSURL *)url;
+- (BOOL)removeLocalFileWithURL:(NSURL *)netURL;
 
+- (void)diskCacheURL:(NSURL *)netURL withLocalURL:(NSURL *)localURL;
+- (NSURL *)cachedLocalURLForNetURL:(NSURL *)netURL;
 @end
