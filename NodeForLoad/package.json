@@ -1,0 +1,9 @@
+{
+  "name": "NodeForLoad",
+  "version": "0.1.0",
+  "description": "A project for upload and download files",
+  "dependencies": {
+    "express": "^4.13.3",
+    "formidable": "^1.1.1"
+  }
+}
