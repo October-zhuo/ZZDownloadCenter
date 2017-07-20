@@ -8,6 +8,7 @@
 
 #import "DownloadDetailController.h"
 #import "DownloadModel.h"
+#import "ZZDownloadCenter.h"
 
 NSString *const kDownloadBaseUrl = @"http://localhost:9000/download";
 
@@ -32,8 +33,20 @@ NSString *const kDownloadBaseUrl = @"http://localhost:9000/download";
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self sestupUI];
-    self.titleLabel.text = self.model.title;
-    self.urlLabel.text = [NSString stringWithFormat:@"%@/%@",kDownloadBaseUrl,self.model.fileID];
+    self.titleLabel.text = self.model.name;
+    self.urlLabel.text = [NSString stringWithFormat:@"%@/?name=%@",kDownloadBaseUrl,self.model.name];
+}
+
+- (void)didClickDownloadBtn{
+    [[ZZDownloadCenter defaultCenter] downloadWithURL:[NSURL URLWithString:self.urlLabel.text] configuration:nil progres:^(float progress) {
+        NSLog(@"%f",progress);
+    } completion:^(NSURL *localURL, NSError *error) {
+        if (error) {
+            NSLog(@"download error -=-=-=--=-:%@",error);
+        }else{
+            NSLog(@"Where amazing happens! %@",localURL.absoluteString);
+        }
+    }];
 }
 
 - (void)sestupUI{
@@ -59,6 +72,7 @@ NSString *const kDownloadBaseUrl = @"http://localhost:9000/download";
         _downloadBtn.layer.masksToBounds = YES;
         _downloadBtn.layer.cornerRadius = 5;
         _downloadBtn.backgroundColor = [UIColor orangeColor];
+        [_downloadBtn addTarget:self action:@selector(didClickDownloadBtn) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_downloadBtn];
     }
 }

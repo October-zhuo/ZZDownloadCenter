@@ -12,6 +12,7 @@
 #import "DownloadViewModel.h"
 #import "DownloadModel.h"
 #import "DownloadDetailController.h"
+#import <UserNotifications/UserNotifications.h>
 
 NSString *const kTableviewCellID = @"kTableviewCellID";
 
@@ -58,7 +59,7 @@ NSString *const kTableviewCellID = @"kTableviewCellID";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:kTableviewCellID];
     DownloadModel *model = self.dataArray[indexPath.row];
-    cell.textLabel.text = model.title;
+    cell.textLabel.text = model.name;
     return cell;
 }
 
@@ -76,20 +77,4 @@ NSString *const kTableviewCellID = @"kTableviewCellID";
     }
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8421/download.html?file_name=IMChatViewStep1.sketch"];
-    ZZDownloadConfiguration *configuration = [[ZZDownloadConfiguration alloc] init];
-    
-    [[ZZDownloadCenter defaultCenter] downloadWithURL:url configuration:configuration progres:^(float progress) {
-        NSLog(@"-=-=-=-=-=-=progress-=-==-=-%f",progress);
-    } completion:^(NSURL *localUrlString, NSError *error) {
-        if (error) {
-            NSLog(@"-------------error---------%@",error);
-        }else{
-            NSLog(@"==========OK==============%@",localUrlString);
-        }
-    }];
-
-}
-
 @end

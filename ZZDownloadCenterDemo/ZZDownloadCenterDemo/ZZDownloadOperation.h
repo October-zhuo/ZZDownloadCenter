@@ -14,7 +14,7 @@ extern NSString * _Nonnull const filePathName;
 
 @interface ZZDownloadOperation : NSOperation
 @property (nonatomic, copy)NSURL * _Nullable filePath;
-@property (nonatomic, copy)void(^ _Nullable configStream)(NSOutputStream * _Nonnull stream, NSUInteger taskID, NSURL * _Nonnull originURL);
+@property (nonatomic, copy)void(^ _Nullable configStream)(NSUInteger taskID, NSURL * _Nonnull originURL);
 
 - (instancetype _Nullable )initWithRequest:(nonnull NSURLRequest *)request
                         session:(NSURLSession * _Nonnull)session

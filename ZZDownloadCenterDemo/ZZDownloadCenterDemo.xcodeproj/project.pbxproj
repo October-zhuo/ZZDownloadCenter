@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41CE8BFDCA2D711D6C5D9205 /* libPods-ZZDownloadCenterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5897C057B9E6D392F31486 /* libPods-ZZDownloadCenterDemo.a */; };
+		AE1E98601F1D8AB200FF12B8 /* ZZDownloadSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1E985F1F1D8AB200FF12B8 /* ZZDownloadSession.m */; };
 		AE24A2161F17B61900DD4B7B /* DownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE24A2151F17B61900DD4B7B /* DownloadModel.m */; };
 		AE24A2191F17B72700DD4B7B /* DownloadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE24A2181F17B72700DD4B7B /* DownloadViewModel.m */; };
 		AE24A21C1F17C5A800DD4B7B /* DownloadDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE24A21B1F17C5A800DD4B7B /* DownloadDetailController.m */; };
@@ -26,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		1E821280E739C6EACC46E19A /* Pods-ZZDownloadCenterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDownloadCenterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZDownloadCenterDemo/Pods-ZZDownloadCenterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AE1E985E1F1D8AB200FF12B8 /* ZZDownloadSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZDownloadSession.h; sourceTree = "<group>"; };
+		AE1E985F1F1D8AB200FF12B8 /* ZZDownloadSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZDownloadSession.m; sourceTree = "<group>"; };
 		AE24A2141F17B61900DD4B7B /* DownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadModel.h; sourceTree = "<group>"; };
 		AE24A2151F17B61900DD4B7B /* DownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadModel.m; sourceTree = "<group>"; };
 		AE24A2171F17B72700DD4B7B /* DownloadViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewModel.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				AE32DA141F0D276300BB8489 /* Supporting Files */,
 				AE32DA2C1F0DB7EC00BB8489 /* ZZDownloadCenter.h */,
 				AE32DA2D1F0DB7EC00BB8489 /* ZZDownloadCenter.m */,
+				AE1E985E1F1D8AB200FF12B8 /* ZZDownloadSession.h */,
+				AE1E985F1F1D8AB200FF12B8 /* ZZDownloadSession.m */,
 				AE32DA2F1F0DB8D700BB8489 /* ZZDownloadConfiguration.h */,
 				AE32DA301F0DB8D700BB8489 /* ZZDownloadConfiguration.m */,
 				AE32DA351F0DBF2500BB8489 /* ZZDownloadOperation.h */,
@@ -273,6 +278,7 @@
 				AE32DA191F0D276300BB8489 /* AppDelegate.m in Sources */,
 				AE24A2161F17B61900DD4B7B /* DownloadModel.m in Sources */,
 				AE32DA371F0DBF2500BB8489 /* ZZDownloadOperation.m in Sources */,
+				AE1E98601F1D8AB200FF12B8 /* ZZDownloadSession.m in Sources */,
 				E9C3F0341F11C6C100B9CBA5 /* NSString+Hash.m in Sources */,
 				AE24A2191F17B72700DD4B7B /* DownloadViewModel.m in Sources */,
 				AE32DA2E1F0DB7EC00BB8489 /* ZZDownloadCenter.m in Sources */,

@@ -11,7 +11,7 @@
 
 NSString * const filePathName = @"filePathName";
 
-@interface ZZDownloadOperation()<NSURLSessionDataDelegate>
+@interface ZZDownloadOperation()
 
 @property (nonatomic, strong)NSURLRequest *request;
 @property (nonatomic, strong)NSURLSessionDataTask *task;
@@ -73,12 +73,9 @@ NSString * const filePathName = @"filePathName";
             if (self.isCancelled) {
                 return;
             }
-#pragma mark - warning should session and task be hold?
-            NSOutputStream *stream = [NSOutputStream outputStreamWithURL:_filePath append:YES];
-            [stream setProperty:_filePath forKey:filePathName];
             _task = [self.session dataTaskWithRequest:_request];
             if(_configStream){
-                _configStream(stream, _task.taskIdentifier, _filePath);
+                _configStream( _task.taskIdentifier, _filePath);
             }
             [_task resume];
         } @catch (NSException *exception) {

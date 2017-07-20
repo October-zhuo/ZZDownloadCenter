@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface DownloadModel : NSObject
-@property (nonatomic, strong)NSString *title;
-@property (nonatomic, strong)NSString *fileID;
+@property (nonatomic, strong)NSString *name;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 @end
