@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ListViewController.h"
+#import <UserNotifications/UserNotifications.h>
+#import "ZZDownloadSessionHelper.h"
+#import "ZZDownloadSession.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +25,24 @@
     ListViewController *rootViewController = [[ListViewController alloc] init];
     _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
     [_window makeKeyAndVisible];
+    
+    [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionBadge|UNAuthorizationOptionAlert completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if(error){
+            NSLog(@"%@",error);
+        }else{
+            NSLog(@"okokok");
+        }
+    }];
+    
     return YES;
 }
 
+
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler{
+    NSURLSession *session = [ZZDownloadSession backgroundSession];
+    NSLog(@"%@",session);
+    [[ZZDownloadSessionHelper sharedHelper] cacheCompletionHandler:completionHandler withID:identifier];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
