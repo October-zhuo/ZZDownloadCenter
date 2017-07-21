@@ -1,0 +1,6 @@
+framework module Pods_ZZDownloadCenterDemo {
+  umbrella header "Pods-ZZDownloadCenterDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

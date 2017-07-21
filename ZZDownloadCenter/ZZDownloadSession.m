@@ -15,7 +15,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         ZZDownloadSessionHelper *sessionHelper = [ZZDownloadSessionHelper sharedHelper];
-        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:[NSUUID UUID].UUIDString];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"com.zhuo.ZZDownloadCenter"];
         NSOperationQueue *delegateQueue = [[NSOperationQueue alloc] init];
         session = [NSURLSession sessionWithConfiguration:configuration delegate:sessionHelper delegateQueue:delegateQueue];
     });

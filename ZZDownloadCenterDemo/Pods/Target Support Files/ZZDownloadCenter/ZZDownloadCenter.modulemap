@@ -1,0 +1,6 @@
+framework module ZZDownloadCenter {
+  umbrella header "ZZDownloadCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}

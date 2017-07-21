@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 55a3135dce0b6d87d5cbbdd2dfa101d4b5c12347
+PODS:
+  - ZZDownloadCenter (0.0.1)
 
-COCOAPODS: 1.2.1
+DEPENDENCIES:
+  - ZZDownloadCenter (from `../`)
+
+EXTERNAL SOURCES:
+  ZZDownloadCenter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZZDownloadCenter: 1c31bc68fa21b440a339e049fa07939ce3a710cc
+
+PODFILE CHECKSUM: 01e3786aeb54bae1289fe420eac0fb2640b24f0f
+
+COCOAPODS: 1.1.1
