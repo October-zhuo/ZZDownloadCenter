@@ -10,17 +10,21 @@ To do download task in a safe and easy way for iOS developer in Objective-C.
 1. 打开终端，切换至`NodeForLoad`目录，输入`node app.js`即可在本机上开启后台服务。
 2. 此时访问`http://localhost:9000/index`，就可以上传文件，这些上传的文件就是供ZZDownloadCenter框架下载的文件。
 3. 打开`ZZDownloadCenterDemo`中的`ZZDownloadCenterDemo.xcworkspace`就可以看到在web端上传的文件列表，点击进入就可以测试下载框架。
+
+
 ###使用框架
-1. `pod ‘ZZDownloadCenter’`
-2. 在项目的`APPDelegate.m`中，粘贴以下代码
+* `pod ‘ZZDownloadCenter’`
+* 在项目的`APPDelegate.m`中，粘贴以下代码
 
 ```- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler{
     NSURLSession *session = [ZZDownloadSession backgroundSession];
     NSLog(@"%@",session);
     [[ZZDownloadSessionHelper sharedHelper] cacheCompletionHandler:completionHandler withID:identifier];
-}```
+}
+```
 
-3. 在需要进行下载任务的地方调用下载方法，如下
+* 在需要进行下载任务的地方调用下载方法，如下
+
 ```
  [[ZZDownloadCenter defaultCenter] downloadWithURL:[NSURL URLWithString:self.urlLabel.text] configuration:nil progres:^(float progress) {
         NSLog(@"%f",progress);
